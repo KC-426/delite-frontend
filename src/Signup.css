@@ -1,0 +1,150 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .left-section {
+    flex: 1;
+  }
+  
+  .signup-image {
+    width: 100%;
+    max-height: 100vh; 
+    height: auto;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .signup-title {
+    text-align: center;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+.input-field{
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    text-align: center;
+
+  }
+  
+  .signup-button {
+    background-color: #3A244A;
+    color: white;
+    font-size: large;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .otp-popup {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(15, 14, 14, 0.5); 
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2; /* Set z-index higher than the signup container */
+  }
+  
+  .otp-popup-content {
+    text-align: center;
+  }
+  
+  /* Apply blur effect to the signup container when OTP popup is shown */
+  .signup-container.blur {
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+  }
+  
+
+  @media screen and (max-width: 1440px) {
+    .signup-container {
+      max-width: 2000px; 
+      padding: 20px 20px;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 50%;
+    }
+  
+    .right-section {
+      padding: 20px 40px;
+    }
+  
+    .signup-image {
+      max-height: 50vh; 
+      width: auto; 
+    }
+  
+    .signup-form {
+      margin-top: 20px;
+    }
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+    .signup-container {
+      max-width: 900px; 
+      padding: 0 20px;
+      flex-direction: column;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      padding: 20px;
+      text-align: center; 
+    }
+  
+    .signup-image {
+      max-height: 50vh;
+    }
+  
+    .signup-form {
+      margin-top: 20px; 
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+    }
+  
+    .left-section,
+    .right-section {
+      flex: none;
+      width: 100%;
+    }
+  
+    .signup-image {
+      max-height: 50vh;
+    }
+  
+    .right-section {
+      padding: 20px;
+    }
+  }
