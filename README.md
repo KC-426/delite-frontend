@@ -19,3 +19,6 @@ npm install
 
 to run the application
 npm run dev 
+
+Sir, one more thing I wanna say, I have not given my best in this project due to lack of time as I have exams now 
+I can do better than this 

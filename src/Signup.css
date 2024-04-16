@@ -66,16 +66,15 @@
     padding: 30px;
     border-radius: 10px;
     cursor: pointer;
-    z-index: 2; /* Set z-index higher than the signup container */
+    z-index: 2; 
   }
   
   .otp-popup-content {
     text-align: center;
   }
-  
-  /* Apply blur effect to the signup container when OTP popup is shown */
+
   .signup-container.blur {
-    filter: blur(5px); /* Adjust the blur intensity as needed */
+    filter: blur(5px); 
   }
   
 
